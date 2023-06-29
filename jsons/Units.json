@@ -12,12 +12,22 @@
         ]
     },
     {
-        "name": "Warrior",
-        "unitType": "Club Swinger",
-        "cost": 40,
+        "name": "Human",
+        "unitType": "Civilian",
+        "cost": 30,
         "movement": 2,
-        "strength": 8,
+        "strength": 5,
         "hurryCostModifier": 20,
+        "attackSound": "nonmetalhit"
+    },
+    {
+        "name": "Stick Warrior",
+        "unitType": "Stick",
+        "cost": 30,
+        "movement": 2,
+        "strength": 6,
+        "hurryCostModifier": 20,
+        "requiredTech": "Stick Working",
         "attackSound": "nonmetalhit"
     },
     {
@@ -25,6 +35,37 @@
         "unitType": "Civilian",
         "cost": 70,
         "movement": 2,
-        "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"]
+        "uniques": [
+            "Can build [Land] improvements on tiles",
+            "Automation is a primary action"
+        ]
+    },
+    {
+        "name": "Bacteria Worker",
+        "unitType": "Civilian",
+        "replaces": "Worker",
+        "uniqueTo": "Good Bacteria",
+        "cost": 70,
+        "movement": 2,
+        "uniques": [
+            "Can build [Land] improvements on tiles",
+            "Automation is a primary action",
+            "[-15]% tile improvement construction time"
+        ]
+    },
+    {
+        "name": "Bacteria",
+        "unitType": "Bacteria",
+        "cost": 25,
+        "movement": 2,
+        "replaces": "Human",
+        "uniqueTo": "Good Bacteria",
+        "strength": 5,
+        "rangedStrength": 4,
+        "range": 1,
+        "uniques": [
+            "Can move after attacking"
+        ],
+        "attackSound": "arrow"
     }
 ]

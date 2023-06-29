@@ -12,5 +12,17 @@
 				"uniques": ["Starting tech"]
 			}
 		]
+	}, {
+		"columnNumber": 1,
+		"era": "Ancient era",
+		"techCost": 40,
+		"buildingCost": 40,
+		"techs": [
+			{
+				"name": "Stick Working",
+				"row": 1,
+				"prerequisites": ["Agriculture"]
+			}
+		]
 	}
 ]

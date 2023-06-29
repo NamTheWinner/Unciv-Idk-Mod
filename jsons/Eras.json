@@ -1,6 +1,7 @@
 [
     {
         "name": "Ancient era",
-        "iconRGB": [184, 56, 56]
+        "iconRGB": [184, 56, 56],
+        "startingMilitaryUnit": "Human"
     }
 ]
