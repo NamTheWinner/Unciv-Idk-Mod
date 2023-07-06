@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Coccus Units",
+        "civilopediaText": [
+            { "text": "Coccus units have an attack strength bonus against Humanity units." },
+            { "text": "However, they are weak at defense but do not get a defense penalty." },
+            { "text": "Coccus units need to set up to attack (except the 'Coccus' unit itself)" }
+        ]
+    }
+]

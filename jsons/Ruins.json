@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "name": "find more lost arrows",
+        "notification": "You found 200 arrows from the ruins!",
+        "weight": 1,
+        "uniques": ["Instantly provides [200] [Arrows]"]
+    },
+    {
+        "name": "find lost arrows",
+        "notification": "You found 100 arrows from the ruins!",
+        "weight": 1,
+        "uniques": ["Instantly provides [100] [Arrows]"]
+    },
+    {
+        "name": "lose arrows",
+        "notification": "You entered the ruins that had a barbarian, and the barbarian looted 100 arrows from you!",
+        "weight": 1,
+        "uniques": ["Instantly consumes [100] [Arrows]"]
+    }
+]

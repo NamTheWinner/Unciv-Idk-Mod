@@ -4,6 +4,7 @@
 		"era": "Ancient era",
 		"techCost": 20,
 		"buildingCost": 40,
+		"wonderCost": 0,
 		"techs": [
 			{
 				"name": "Agriculture",
@@ -15,14 +16,54 @@
 	}, {
 		"columnNumber": 1,
 		"era": "Ancient era",
-		"techCost": 40,
+		"techCost": 35,
 		"buildingCost": 40,
+		"wonderCost": 0,
 		"techs": [
 			{
 				"name": "Stick Working",
 				"row": 1,
 				"prerequisites": ["Agriculture"]
+			},
+			{
+				"name": "Chopping",
+				"row": 3,
+				"prerequisites": ["Agriculture"]
+			},
+			{
+				"name": "Arrow Working",
+				"row": 5,
+				"prerequisites": ["Agriculture"],
+				"uniques": ["Instantly provides [100] [Arrows]"]
+			},
+			{
+				"name": "Mining",
+				"row": 7,
+				"prerequisites": ["Agriculture"]
 			}
 		]
+	}, {
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 50,
+		"buildingCost": 40,
+		"wonderCost": 0,
+		"techs": [
+			{
+				"name": "Ancient Warfare",
+				"row": 1,
+				"prerequisites": ["Stick Working"]
+			},
+			{
+				"name": "Pottery",
+				"row": 2,
+				"prerequisites": ["Stick Working"]
+			},
+			{
+				"name": "Archery",
+				"row": 5,
+				"prerequisites": ["Arrow Working"]
+			}
+		] 
 	}
 ]

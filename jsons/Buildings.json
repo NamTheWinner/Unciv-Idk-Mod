@@ -9,5 +9,30 @@
 		"cityStrength": 2,
         "cost": 1,
         "uniques": ["Indicates the capital city"]
+    },
+    {
+        "name": "Campfire",
+        "production": 2,
+        "food": 3,
+        "science": 2,
+        "culture": 1,
+        "happiness": 1,
+        "faith": 1,
+        "requiredTech": "Stick Working",
+        "civilopediaText": [
+            {
+                "text": "The center of the tents"
+            }
+        ]
+    },
+    {
+        "name": "Fletching Station",
+        "production": 2,
+        "maintenance": 1,
+        "requiredTech": "Arrow Working",
+        "uniques": [
+            "Provides [7] [Arrows]",
+            "Provides [+7] [Arrows] <after adopting [Fletching Efficiency]>"
+        ]
     }
 ]

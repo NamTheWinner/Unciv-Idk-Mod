@@ -4,7 +4,7 @@
         "movementType": "Land"
     },
     {
-        "name": "Club Swinger",
+        "name": "Sword",
         "movementType": "Land"
     },
     {
@@ -15,5 +15,13 @@
         "name": "Bacteria",
         "movementType": "Land",
         "uniques": ["Can pass through impassable tiles"]
+    },
+    {
+        "name": "Coccus",
+        "movementType": "Land"
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land"
     }
 ]

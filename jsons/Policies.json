@@ -1,1 +1,31 @@
-[]
+[
+    {
+        "name": "Fletching",
+        "era": "Ancient era",
+        "uniques": ["Instantly provides [100] [Arrows]"],
+        "policies": [
+            {
+                "name": "Fletching Efficiency",
+                "row": 1,
+                "column": 1,
+                "uniques": ["Instantly provides [40] [Arrows]", "Provides [3] [Arrows]"]
+            },
+            {
+                "name": "Archery Efficiency",
+                "row": 2,
+                "column": 2,
+                "requires": ["Fletching Efficiency"],
+                "uniques": [
+                    "Instantly consumes [250] [Arrows]", 
+                    "[+70]% Strength <for [Archery] units> <when attacking>"
+                ]
+            },
+            {
+                "name": "Fletching Complete",
+                "uniques": [
+                    "Instantly provides [1000] [Arrows]"
+                ]
+            }
+        ]
+    }
+]

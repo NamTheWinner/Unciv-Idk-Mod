@@ -14,21 +14,118 @@
     {
         "name": "Human",
         "unitType": "Civilian",
+        "upgradesTo": "Stick Warrior",
         "cost": 30,
         "movement": 2,
+        "strength": 4,
+        "attackSound": "nonmetalhit",
+        "obsoleteTech": "Stick Working"
+    },
+    {
+        "name": "Bacteria",
+        "unitType": "Bacteria",
+        "cost": 25,
+        "movement": 2,
+        "replaces": "Human",
+        "uniqueTo": "Good Bacteria",
         "strength": 5,
-        "hurryCostModifier": 20,
-        "attackSound": "nonmetalhit"
+        "rangedStrength": 4,
+        "range": 1,
+        "uniques": [
+            "Can move after attacking"
+        ],
+        "attackSound": "arrow"
     },
     {
         "name": "Stick Warrior",
         "unitType": "Stick",
+        "upgradesTo": "Warrior",
         "cost": 30,
         "movement": 2,
         "strength": 6,
-        "hurryCostModifier": 20,
         "requiredTech": "Stick Working",
+        "attackSound": "nonmetalhit",
+        "obsoleteTech": "Ancient Warfare"
+    },
+    {
+        "name": "Coccus",
+        "unitType": "Coccus",
+        "upgradesTo": "Staph",
+        "cost": 25,
+        "movement": 2,
+        "replaces": "Stick Warrior",
+        "uniqueTo": "Good Bacteria",
+        "strength": 5,
+        "requiredTech": "Stick Working",
+        "uniques": [
+            "Can move after attacking"
+        ],
+        "attackSound": "arrow",
+        "obsoleteTech": "Archery"
+    },
+    {
+        "name": "Warrior",
+        "unitType": "Sword",
+        "cost": 50,
+        "movement": 2,
+        "strength": 7,
+        "requiredTech": "Ancient Warfare",
         "attackSound": "nonmetalhit"
+    },
+    {
+        "name": "Bacillus",
+        "unitType": "Bacteria",
+        "cost": 45,
+        "movement": 2,
+        "replaces": "Warrior",
+        "uniqueTo": "Good Bacteria",
+        "strength": 7,
+        "uniques": [
+            "Can move after attacking",
+            "[-30]% Strength <when defending>"
+        ],
+        "requiredTech": "Ancient Warfare",
+        "attackSound": "arrow"
+    },
+    {
+        "name": "Archer",
+        "unitType": "Archery",
+        "cost": 37,
+        "movement": 2,
+        "strength": 5,
+        "rangedStrength": 7,
+        "range": 2,
+        "uniques": [
+            "Costs [30] [Arrows]", 
+            "Consumes [2] [Arrows]",
+            "Consumes [1] [Arrows] <after adopting [Archery Efficiency]>",
+            "Consumes [1] [Arrows] <when at war>",
+            "Cannot attack <without [Arrows]>"
+        ],
+        "requiredTech": "Archery",
+        "attackSound": "arrow"
+    },
+    {
+        "name": "Staph",
+        "unitType": "Coccus",
+        "cost": 40,
+        "movement": 2,
+        "replaces": "Archer",
+        "uniqueTo": "Good Bacteria",
+        "strength": 5,
+        "rangedStrength": 6,
+        "range": 3,
+        "requiredTech": "Archery",
+        "uniques": [
+            "[+150]% Strength <vs [Humanity] units>",
+            "Must set up to ranged attack",
+            "Costs [30] [Arrows]", 
+            "Consumes [2] [Arrows]",
+            "Consumes [1] [Arrows] <after adopting [Archery Efficiency]>",
+            "Consumes [1] [Arrows] <when at war>",
+            "Cannot attack <without [Arrows]>"
+        ],
+        "attackSound": "arrow"
     },
     {
         "name": "Worker",
@@ -50,22 +147,31 @@
         "uniques": [
             "Can build [Land] improvements on tiles",
             "Automation is a primary action",
-            "[-15]% tile improvement construction time"
+            "[-10]% tile improvement construction time"
         ]
     },
     {
-        "name": "Bacteria",
-        "unitType": "Bacteria",
-        "cost": 25,
+        "name": "Miner",
+        "unitType": "Civilian",
+        "cost": 40,
         "movement": 2,
-        "replaces": "Human",
-        "uniqueTo": "Good Bacteria",
-        "strength": 5,
-        "rangedStrength": 4,
-        "range": 1,
+        "requiredTech": "Mining",
         "uniques": [
-            "Can move after attacking"
-        ],
-        "attackSound": "arrow"
+            "Can build [Mine] improvements on tiles",
+            "Automation is a primary action",
+            "[+20]% tile improvement construction time <for [5] turns>",
+            "[-30]% tile improvement construction time"
+        ]
+    },
+    {
+        "name": "Fletcher",
+        "unitType": "Civilian",
+        "cost": 50,
+        "movement": 2,
+        "requiredTech": "Arrow Working",
+        "uniques": [
+            "Instantly provides [100] [Arrows] <for [2] movement>",
+            "[-50]% maintenance costs"
+        ]
     }
 ]

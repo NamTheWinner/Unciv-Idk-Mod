@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "name": "Arrows",
+        "resourceType": "Strategic",
+        "uniques": ["Stockpiled"],
+        "civilopediaText": [
+            {
+                "text": "Can be used to make Archers", "link": "Unit/Archer"
+            }
+        ]
+    },
+    {
+        "name": "Salt",
+        "resourceType": "Luxury",
+        "terrainsCanBeFoundOn": ["Coast", "Ocean", "Plains"],
+        "uniques": [
+            "Generated with weight [60] <in [Ocean] tiles>",
+            "Generated with weight [40] <in [Coast] tiles>",
+            "Generated with weight [100] <in [Plains] tiles>"
+        ],
+        "improvement": "Mine",
+        "improvementStats": {
+            "production": 1,
+            "food": 1
+        }
+    },
+    {
+        "name": "Mint",
+        "resourceType": "Luxury",
+        "terrainsCanBeFoundOn": ["Grassland", "Plains"],
+        "uniques": [
+            "Generated with weight [80] <in [Grassland] tiles> <within [2] tiles of a [Lakes]>",
+            "Generated with weight [60] <in [Plains] tiles> <within [2] tiles of a [Lakes]>"
+        ],
+        "improvement": "Pot",
+        "gold": 2,
+        "improvementStats": {
+            "food": 1,
+            "gold": 1
+        }
+    }
+]
